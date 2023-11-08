@@ -1,0 +1,303 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block main %}
+
+<div class="w-full flex flex-col items-center">
+  <div
+    class="max-w-screen-desktop w-full desktop:px-[112px] tablet:px-[50px] sm:px-[60px] px-[26px] flex flex-col align-middle items-center"
+    style=""
+  >
+    <!--Blogs-->
+    <div
+      class="flex flex-col w-full tablet:mt-[128px] mobile:mt-[80px] mt-[40px]"
+    >
+      <span
+        class="tablet:text-[68px] mobile:text-[40px] text-[35px] accentcolor font-bold primaryfont"
+        >Blogs</span
+      ><span
+        class="tablet:text-[20px] mobile:text-[24px] text-[12px] tablet:font-normal texteerieblack mt-[20px]"
+        >Insightful articles and engaging content.</span
+      ><!--v-if-->
+      <div
+        class="flex mt-[65px] tablet:justify-start justify-center 2xl:text-[27px] xl:text-[24px] lg:text-[22px] tablet:text-[20px] sm:text-[17px] text-[14px] text-white lg:gap-[40px] gap-[20px]"
+      >
+        <a
+          href="#Technology"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Technology </a
+        ><a
+          href="#Design"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Design </a
+        ><a
+          href="#Marketing"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Marketing </a
+        ><a
+          href="#SocialMedia"
+          class="bgspaceodet whitespace-nowrap tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Social Media
+        </a>
+      </div>
+    </div>
+    <div
+      class="lg:mt-[70px] tablet:mt-[200px] w-4/5 border-t-4 h-20 border-gray-200 relative"
+    >
+      <img
+        class="absolute w-[400px] right-[-10%] bottom-[-7%] pointer-events-none"
+        src="{% static "images/images/tree.png" %}"
+      />
+    </div>
+    <!--Latest articles-->
+    <div class="mt-[70px] flex flex-col w-full">
+      <div
+        class="textspaceodet font-bold tablet:text-[36px] text-[25px] justify-center w-full flex"
+      >
+        <span>Latest </span
+        ><span
+          class="tablet:textspaceodet mobile:textblazeorange textspaceodet"
+          >&nbsp;articles</span
+        >
+      </div>
+      <div
+        class="mt-[40px] flex xl:flex-row flex-col w-full 2xl:gap-[110px] tablet:gap-[40px] gap-y-[30px] textspaceodet"
+      >
+        <div
+          class="xl:w-[55%] flex flex-col shadow-xl rounded-xl sm:pt-[26px] pt-[20px] sm:px-[30px] px-[20px] sm:pb-[10px] pb-[26px]"
+        >
+          <img
+            class="px-[12px]"
+            src="{% static "images/images/blog1.png" %}"
+          /><!--v-if-->
+          <div
+            class="flex justify-between sm:mt-[20px] mt-[15px] align-top"
+          >
+            <span class="font-bold sm:text-[24px] text-[22px]"
+              >The importance of teamwork</span
+            ><span class="text-[12px]">January 4 2023</span>
+          </div>
+          <span
+            class="sm:mt-[15px] mt-[10px] sm:text-[16px] text-[14px] sm:font-semibold"
+            >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Lorem...</span
+          >
+          <div class="flex justify-between mt-[14px]">
+            <div
+              class="flex mt-[9px] align-middle text-center items-center"
+            >
+              <img
+                class="w-[10%]"
+                src="{% static "images/images/circle.png" %}"
+              /><span
+                class="sm:text-[16px] text-[12px] ml-[8px] font-bold"
+                >Daniele Inserra (UX/UI Designer)</span
+              >
+            </div>
+            <div
+              class="blazeorange items-center align-middle border-2 rounded-full h-fit py-[5px] px-[10px]"
+            >
+              #Marketing
+            </div>
+          </div>
+        </div>
+        <div
+          class="xl:w-[45%] flex xl:flex-col sm:flex-row flex-col 2xl:gap-[65px] tablet:gap-[20px] gap-[22px]"
+        >
+          <div
+            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px]"
+          >
+            <img
+              class="w-[35%] h-fit"
+              src="{% static "images/images/blog2.png" %}"
+            />
+            <div class="flex flex-col ml-[15px]">
+              <span class="font-bold tablet:text-[20px] text-[14px]"
+                >Adobe bought Figma, what happens now?</span
+              ><span class="tablet:text-[12px] text-[9px]"
+                >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsum Lorem...</span
+              ><!--v-if-->
+              <div
+                class="flex justify-between tablet:mt-[38px] mt-[12px]"
+              >
+                <div class="flex items-center align-middle">
+                  <img
+                    class="w-[24px]"
+                    src="{% static "images/images/circle.png" %}"
+                  /><span class="ml-[9px] tablet:text-[12px] text-[9px]"
+                    >Daniele Inserra (UX/UI Designer)</span
+                  >
+                </div>
+                <span
+                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px]"
+                  >#Technology</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px]"
+          >
+            <img
+              class="w-[35%] h-fit"
+              src="{% static "images/images/blog2.png" %}"
+            />
+            <div class="flex flex-col ml-[15px]">
+              <span class="font-bold tablet:text-[20px] text-[14px]"
+                >Adobe bought Figma, what happens now?</span
+              ><span class="tablet:text-[12px] text-[9px]"
+                >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsum Lorem...</span
+              ><!--v-if-->
+              <div
+                class="flex justify-between tablet:mt-[38px] mt-[12px]"
+              >
+                <div class="flex items-center align-middle">
+                  <img
+                    class="w-[24px]"
+                    src="{% static "images/images/circle.png" %}"
+                  /><span class="ml-[9px] tablet:text-[12px] text-[9px]"
+                    >Daniele Inserra (UX/UI Designer)</span
+                  >
+                </div>
+                <span
+                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px]"
+                  >#Technology</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <button
+          class="mt-[85px] text-white bgblazeorange tablet:text-[22px] text-[20px] tablet:px-[60px] px-[35px] py-[20px] w-fit rounded-xl"
+        >
+          <span>See all articles</span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="mt-[100px] w-4/5 border-t-4 h-[28px] border-gray-200 relative"
+    >
+      <img
+        class="absolute w-[400px] left-[-10%] bottom-[-240%]"
+        src="{% static "images/images/blog3.png" %}"
+      />
+    </div>
+    <!--Authors-->
+    <div
+      id="authors"
+      class="mt-[50px] flex flex-col justify-center align-middle items-center w-full mb-[200px]"
+    >
+      <span
+        class="texteerieblack tablet:text-[48px] text-[40px] font-bold"
+        >Authors</span
+      >
+      <div class="relative tablet:mt-[75px] mt-[40px] w-10/12 flex">
+        <div
+          id="owl-demo"
+          class="owl-theme owl-carousel w-full"
+          style="opacity: 1; display: block"
+        >
+          <!-- <div class="owl-wrapper-outer">
+            <div
+              class="owl-wrapper"
+              style="width: 4172px; left: 0px; display: block"
+            > -->
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 298px">
+                <div
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                >
+                  <img
+                    class="w-[220px] h-[220px]"
+                    src="{% static "images/images/danielle.png" %}"
+                  /><span class="text-[20px]">Danielle Inserra</span
+                  ><span class="text-[16px] mb-8">UI/UX Designer</span>
+                </div>
+              </div>
+            <!-- </div>
+          </div> -->
+        </div>
+        <div
+          class="absolute right-0 w-[15%] h-full gradient pointer-events-none border-none"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock main %}

@@ -1,0 +1,152 @@
+{% load static %}
+<header class="max-w-screen-desktop w-full desktop:px-[112px] tablet:px-[50px] flex flex-col align-middle items-center">
+  <!-- geater than table let  -->
+  <div
+    id="navbar-main"
+    class="flex flex-row w-full h-20 p-6 align-middle subpixel-antialiased whitespace-nowrap"
+  >
+    <div class="w-1/3">
+      <div
+        class="justify-center align-middle items-center lg:w-32 md:w-28 w-24"
+      >
+        <a
+          href="{% url "app:homepage" %}"
+          class="router-link-active router-link-exact-active cursor-pointer"
+          aria-current="page"
+          ><img src="{% static "images/images/logo2.png" %}"
+        /></a>
+      </div>
+    </div>
+    <div
+      class="w-2/3 justify-end flex flex-row xl:text-xl lg:text-lg md:text-md text-sm font-normal items-center align-middle texteerieblack"
+    >
+      <a
+        href="{% url "app:homepage" %}"
+        class="router-link-active router-link-exact-active accentcolor xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+        aria-current="page"
+      >
+        Home
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          ></path></svg></a
+      ><a
+        href="{% url "app:aboutus" %}"
+        class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+      >
+        About us</a
+      ><a
+        href="{% url "app:ourservices" %}"
+        class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+      >
+        Our services
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          ></path></svg>
+      </a>
+      <a
+        id="blog-menu"
+        href="{% url "app:blogs" %}"
+        class="xl:mx-2 md:mx-1 relative cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+      >
+        Blog
+        <svg
+          id="openBlogNav"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          ></path>
+        </svg>
+        <svg
+          id="closeBlogNav" style="display: none;"
+          class="w-[14px] h-[14px] xl:ml-[14px] mr-[4px] md:ml-1 stroke-2" viewBox="0 0 14 8" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 7L7 1L1 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+        </svg>
+        <div
+          id="blog-nav"
+          class="absolute cursor-default top-[45px]"
+          style="display: none"
+        >
+          <div
+            class="rounded-xl texteerieblack bg-gray-100 flex flex-col gap-y-[27px] py-[20px] px-[15px] text-[16px] font-normal"
+          >
+            <a href="{% url "app:blog_articles" %}" class="cursor-pointer"> Articles </a
+            ><a href="{% url "app:blog_authors" %}" class="cursor-pointer"> Authors</a>
+          </div>
+        </div>
+      </a>
+      <a
+        href="{% url "app:careers" %}"
+        class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+      >
+        Careers 
+      </a>
+      <a
+        href="{% url "app:contactus" %}"
+        class="accentcolor xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+      >
+        Contact us
+      </a>
+    </div>
+  </div>
+
+  <!-- mobile navbar -->
+  <div id="navbar-mobile" class="flex relative flex-row w-full h-20 p-6 align-middle subpixel-antialiased whitespace-nowrap shadow-xl" style="display: none;">
+    <button id="mobile-toggle" class="cursor-pointer">
+      <svg id="icon1" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 7.5C3.75 6.80964 4.30964 6.25 5 6.25H25C25.6904 6.25 26.25 6.80964 26.25 7.5C26.25 8.19036 25.6904 8.75 25 8.75H5C4.30964 8.75 3.75 8.19036 3.75 7.5Z" fill="#FF6909"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 15C3.75 14.3096 4.30964 13.75 5 13.75H25C25.6904 13.75 26.25 14.3096 26.25 15C26.25 15.6904 25.6904 16.25 25 16.25H5C4.30964 16.25 3.75 15.6904 3.75 15Z" fill="#FF6909"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 22.5C3.75 21.8096 4.30964 21.25 5 21.25H25C25.6904 21.25 26.25 21.8096 26.25 22.5C26.25 23.1904 25.6904 23.75 25 23.75H5C4.30964 23.75 3.75 23.1904 3.75 22.5Z" fill="#FF6909"></path>
+      </svg>
+      <svg id="icon2" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6.29289 6.29289C5.90237 6.68342 5.90237 7.31658 6.29289 7.70711L16.2929 17.7071C16.6834 18.0976 17.3166 18.0976 17.7071 17.7071C18.0976 17.3166 18.0976 16.6834 17.7071 16.2929L7.70711 6.29289C7.31658 5.90237 6.68342 5.90237 6.29289 6.29289Z"
+            fill="#FF6909" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289Z"
+            fill="#FF6909" />
+      </svg>
+    </button>
+    <div id="navbar-collapse" class="absolute top-20 left-0 z-50" style="display: none;">
+      <div class="rounded-xl bg-gray-100 flex flex-col p-5 px-14 text-[16px] font-normal">
+        <a aria-current="page" href="{% url "app:homepage" %}" class="router-link-active router-link-exact-active accentcolor mb-[32px]">Home </a>
+        <a href="{% url "app:aboutus" %}" class="mb-[32px]"> About us</a>
+        <a href="{% url "app:ourservices" %}" class="mb-[32px]"> Our services</a>
+        <a href="{% url "app:blogs" %}" class="mb-[32px]"> Blogs </a>
+        <a href="{% url "app:careers" %}" class="mb-[32px]"> Careers </a>
+        <a href="{% url "app:contactus" %}" class="mb-[20px]"> Contact us </a>
+      </div>
+    </div>
+    <div class="flex w-full justify-center">
+      <img class="-ml-6" src="{% static "images/images/logo.png" %}"></div>
+  </div>
+</header>

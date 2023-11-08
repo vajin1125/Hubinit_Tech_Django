@@ -1,0 +1,283 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block main %}
+
+<div class="w-full flex flex-col items-center">
+  <div
+    class="max-w-screen-desktop w-full desktop:px-[112px] tablet:px-[50px] sm:px-[60px] px-[26px] flex flex-col align-middle items-center"
+    style=""
+  >
+    <!--Blogs-->
+    <div
+      class="flex flex-col w-full tablet:mt-[128px] mobile:mt-[80px] mt-[40px]"
+    >
+      <span
+        class="tablet:text-[68px] mobile:text-[40px] text-[35px] accentcolor font-bold primaryfont"
+        >Blogs</span
+      ><span
+        class="tablet:text-[20px] mobile:text-[24px] text-[12px] tablet:font-normal texteerieblack mt-[20px]"
+        >Insightful articles and engaging content.</span
+      ><!--v-if-->
+      <div
+        class="flex mt-[65px] tablet:justify-start justify-center 2xl:text-[27px] xl:text-[24px] lg:text-[22px] tablet:text-[20px] sm:text-[17px] text-[14px] text-white lg:gap-[40px] gap-[20px]"
+      >
+        <a
+          href="#Technology"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Technology </a
+        ><a
+          href="#Design"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Design </a
+        ><a
+          href="#Marketing"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Marketing </a
+        ><a
+          href="#SocialMedia"
+          class="bgspaceodet whitespace-nowrap tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+        >
+          Social Media
+        </a>
+      </div>
+    </div>
+    <div
+      class="mt-[100px] grid xl:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-x-[30px] tablet:gap-y-[70px] gap-y-[30px] tablet:mb-[200px] mb-[85px]"
+    >
+      <a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      ><a href="#blog/article/articles" class="col-span-1"
+        ><div
+          class="rounded-lg shadow-lg flex flex-col p-[20px] mobile:pb-[24px] tablet:mb-6 mb-3"
+        >
+          <img class="w-full" src="{% static "images/images/blog4.png" %}" />
+          <div class="flex justify-between texteerieblack mt-[18px]">
+            <span class="text-[12px]">September 15, 2022</span
+            ><span
+              class="green border rounded-full h-fit px-[7px] py-[3px] text-[10px]"
+              >#articles</span
+            >
+          </div>
+          <span class="font-bold text-[20px] mt-[10px] text-left"
+            >How does tech stack work?</span
+          ><span class="mt-[10px] text-left"
+            >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+            sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+            consectetur. Gravida est ipsumst</span
+          >
+          <div class="flex items-center align-middle mt-[23px]">
+            <img
+              class="w-[24px]"
+              src="{% static "images/images/circle.png" %}"
+            /><span class="ml-[9px] text-[12px]"
+              >Daniele Inserra (UX/UI Designer)</span
+            >
+          </div>
+        </div></a
+      >
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+{% endblock main %}

@@ -44,12 +44,12 @@
 Colour 
 */
 :root {
-	--accent-color: hsl(23, 100%, 52%);
-	--secondary-light-orange: hsl(23, 100%, 72%);
-	--secondary-dark-orange: hsl(23, 100%, 44%);
-	--primary-color: hsl(224, 35%, 24%);
-	--primary-secondary: hsl(252, 100%, 98%);
-	--eerieblack: hsl(221, 37%, 10%);
+	--accent-color: #ff680a;
+	--secondary-light-orange: #ffa770;
+	--secondary-dark-orange: #e05600;
+	--primary-color: #283353;
+	--primary-secondary: #f7f5ff;
+	--eerieblack: #101623;
 }
 
 /* 

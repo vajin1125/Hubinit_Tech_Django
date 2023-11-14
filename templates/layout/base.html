@@ -6,7 +6,10 @@
     <link rel="icon" href="{% static "images/favicon.ico" %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hubinit | {% block title %}{% endblock title %}</title>
-    <link rel="stylesheet" href="{% static "css/tailwindcss.css" %}" />
+    {% comment %} <link rel="stylesheet" href="{% static "css/tailwindcss.css" %}" /> {% endcomment %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{% static "js/tailwindcss.config.js" %}"></script>
+    <script src="{% static "js/storedthem.js" %}"></script>
     <link rel="stylesheet" href="{% static "css/carousel.css" %}"></script>
     <link rel="stylesheet" href="{% static "css/gotothetop.css" %}"></script>
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
@@ -16,7 +19,7 @@
   </head>
 
   <body class="bg-white h-full" style="cursor: auto">
-    <div id="app" class="w-full flex justify-center flex-col items-center textspaceodet overflow-clip" data-v-app="">
+    <div id="app" class="w-full flex justify-center flex-col items-center textspaceodet overflow-clip dark:bg-dark-bg" data-v-app="">
       {% include "layout/header.html" %}
       {% block main %}{% endblock main %}
       {% include "layout/gototop.html" %}
@@ -25,5 +28,6 @@
     <script type="text/javascript" src="{% static "js/gototop.js" %}"></script>
     <script type="text/javascript" src="{% static "js/navbar.js" %}"></script>
     <script type="text/javascript" src="{% static "js/main.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/spaghetti.js" %}"></script>
   </body>
 </html>

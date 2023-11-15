@@ -21,18 +21,18 @@
         <div
           class="2xl:text-[68px] xl:text-[52px] text-[40px] pb-2 w-full whitespace-nowrap font-bold primaryfont"
         >
-          <span class="primarycolor">Behind the </span
-          ><span class="accentcolor">scenes.</span>
+          <span class="text-primary-color dark:text-dark-light-grey">Behind the </span
+          ><span class="text-accent-color dark:text-dark-orange">scenes.</span>
         </div>
         <div
-          class="2xl:text-[20px] xl:text-[18px] text-[16px] texteerieblack border-t-2 pt-6 border-black"
+          class="2xl:text-[20px] xl:text-[18px] text-[16px] texteerieblack border-t-2 pt-6 border-black dark:text-dark-light-grey"
         >
           Lorem ipsum dolor sit amet consectetur. Consectetur mauris nulla
           tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.
         </div>
         <div
-          class="2xl:mt-28 xl:mt-20 mt-16 2xl:text-[20px] xl:text-[18px] text-[16px] texteerieblack"
+          class="2xl:mt-28 xl:mt-20 mt-16 2xl:text-[20px] xl:text-[18px] text-[16px] texteerieblack dark:text-dark-light-grey"
         >
           "Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis."
@@ -44,7 +44,7 @@
             class="rounded-full w-[50px] h-[50px]"
             src="{% static "images/images/CEO.png" %}"
           />
-          <div class="flex flex-col ml-6">
+          <div class="flex flex-col ml-6 dark:text-dark-light-grey">
             <span class="font-bold primaryfont text-[20px]"
               >Eric Burnik</span
             ><span class="text-[18px]">CEO Founder of hubinit</span>
@@ -76,30 +76,18 @@
       class="flex relative cnnContents w-full text-lg text-gray-600 justify-around mobile:mt-24 overflow-hidden"
     >
       <div class="flex flex-row w-full justify-around marqueeStyle">
-        <img src="{% static "images/images/microsoft.png" %}" /><img
-          src="{% static "images/images/cisco.png" %}"
-        /><img src="{% static "images/images/ibm.png" %}" /><img
-          src="{% static "images/images/sap.png" %}"
-        /><img src="{% static "images/images/hp.png" %}" /><img
-          src="{% static "images/images/microsoft.png" %}"
-        /><img src="{% static "images/images/cisco.png" %}" />
+        <img src="{% static "images/images/clients.png" %}" />
       </div>
       <div
         class="flex flex-row w-full justify-around marqueeStyle2 absolute right-[-100%]"
       >
-      <img src="{% static "images/images/microsoft.png" %}" /><img
-          src="{% static "images/images/cisco.png" %}"
-        /><img src="{% static "images/images/ibm.png" %}" /><img
-          src="{% static "images/images/sap.png" %}"
-        /><img src="{% static "images/images/hp.png" %}" /><img
-          src="{% static "images/images/microsoft.png" %}"
-        /><img src="{% static "images/images/cisco.png" %}" />
+        <img src="{% static "images/images/clients.png" %}" />
       </div>
     </div>
     <div class="w-4/5 border-2 bg-gray-200 mt-14"></div>
     <!--Who are we?-->
     <div
-      class="tablet:mt-14 mt-[40px] w-full justify-center align-middle items-center flex flex-col"
+      class="tablet:mt-14 mt-[40px] w-full justify-center align-middle items-center flex flex-col dark:text-dark-light-grey"
     >
       <span class="text-[68px] font-bold primaryfont">Who are we?</span>
       <div
@@ -198,7 +186,7 @@
                 >
                   <img
                     class="w-[220px] h-[220px]"
-                    src="{% static "images/images/danielle.png" %}"
+                    src="{% static 'images/images/danielle.png' %}"
                   /><span class="text-[20px]">Danielle Inserra</span
                   ><span class="text-[16px] mb-8">UI/UX Designer</span>
                 </div>
@@ -207,11 +195,11 @@
           </div> -->
         </div>
         <div
-          class="absolute right-0 top-0 w-[15%] h-full gradient pointer-events-none border-none"
+          class="absolute right-0 top-0 w-[15%] h-full gradient pointer-events-none border-none dark:bg-gradient-to-l from-dark-bg"
         ></div>
       </div>
       <button
-        class="bgblazeorange text-[22px] px-[55px] py-[28px] text-white rounded-xl mt-32"
+        class="bg-accent-color dark:bg-dark-orange text-[22px] px-[55px] py-[28px] text-white rounded-xl mt-32"
       >
         Write to the team
       </button>
@@ -221,11 +209,11 @@
       <div
         class="flex w-full tablet:justify-start justify-center tablet:text-[48px] mobile:text-[32px] text-[25px] font-bold primaryfont"
       >
-        <span>Our</span
-        ><span class="tablet:accentcolor">&nbsp;pride</span>
+        <span class="dark:text-dark-light-grey">Our</span
+        ><span class="tablet:text-accent-color dark:text-dark-orange">&nbsp;pride</span>
       </div>
       <div
-        class="tablet:mt-44 mobile:mt-[100px] mt-[40px] flex tablet:flex-row w-full justify-end items-center align-middle lg:whitespace-nowrap text-right"
+        class="tablet:mt-44 mobile:mt-[100px] mt-[40px] flex tablet:flex-row w-full justify-end items-center align-middle lg:whitespace-nowrap text-right dark:text-dark-light-grey"
       >
         <div
           class="flex flex-col items-end justify-end align-bottom -mb-10"
@@ -243,15 +231,15 @@
           >59.88%</span
         ><img
           class="w-2/5 tablet:-ml-20 z-10"
-          src="{% static "images/images/ourpride1.png" %}"
+          src="{% static 'images/images/ourpride1.png' %}"
         />
       </div>
       <div
-        class="tablet:mt-20 mt-[40px] flex flex-row w-full justify-start items-center align-middle lg:whitespace-nowrap"
+        class="tablet:mt-20 mt-[40px] flex flex-row w-full justify-start items-center align-middle lg:whitespace-nowrap dark:text-dark-light-grey"
       >
         <img
           class="w-2/5 tablet:-mr-20 z-10"
-          src="{% static "images/images/ourpride2.png" %}"
+          src="{% static 'images/images/ourpride2.png' %}"
         /><span
           class="2xl:text-[158px] xl:text-[120px] lg:text-[100px] text-[80px] font-bold primaryfont z-30 mr-4"
           >20+</span
@@ -274,17 +262,17 @@
     ></div>
     <!--We believe in hard work-->
     <div class="mt-10 flex flex-row w-full align-middle items-center">
-      <img class="w-[30%]" src="{% static "images/images/ourpride3.png" %}" />
+      <img class="w-[30%]" src="{% static 'images/images/ourpride3.png' %}" />
       <div class="flex flex-col">
         <div
           class="w-full font-bold primaryfont 2xl:text-[68px] xl:text-[52px] tablet:text-[46px] sm:text-[38px] mobile:text-[28px] text-[25px] xl:whitespace-nowrap"
         >
-          <span class="primarycolor">We believe in</span
-          ><span class="accentcolor">&nbsp;hard work</span
-          ><span class="primarycolor">&nbsp;and<br /></span
-          ><span class="accentcolor">dedication</span>
+          <span class="text-primary-color dark:text-dark-light-grey">We believe in</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;hard work</span
+          ><span class="text-primary-color dark:text-dark-light-grey">&nbsp;and<br /></span
+          ><span class="text-accent-color dark:text-dark-orange">dedication</span>
         </div>
-        <span class="texteerieblack mt-9 text-[20px]">
+        <span class="texteerieblack mt-9 text-[20px] dark:text-dark-light-grey">
           Lorem ipsum dolor sit amet consectetur. Consectetur mauris nulla
           tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.
@@ -295,7 +283,7 @@
       class="mt-16 tablet:mb-0 mobile:mb-[115px] mb-[140px] relative w-full grid tablet:grid-cols-3 grid-cols-2 2xl:gap-28 xl:gap-24 lg:gap-20 tablet:gap-16 mobile:gap-[24px] gap-[16px] tablet:gap-y-[24px] mobile:gap-y-[50px] gap-y-[32px] tablet:px-[40px] sm:px-[100px] px-[28px]"
     >
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -335,18 +323,18 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>We keep it</span
-          ><span class="accentcolor">&nbsp;simple.</span>
+          <span class="dark:text-dark-light-grey">We keep it</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;simple.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
         ><!--v-if-->
       </div>
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -368,18 +356,18 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>We take it</span
-          ><span class="accentcolor">&nbsp;step-by-step.</span>
+          <span class="dark:text-dark-light-grey">We take it</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;step-by-step.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
         ><!--v-if-->
       </div>
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -413,18 +401,18 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>We love to</span
-          ><span class="accentcolor">&nbsp;explore.</span>
+          <span class="dark:text-dark-light-grey">We love to</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;explore.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
         ><!--v-if-->
       </div>
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -498,18 +486,18 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>We</span
-          ><span class="accentcolor">&nbsp;stop at nothing.</span>
+          <span class="dark:text-dark-light-grey">We</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;stop at nothing.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
         ><!--v-if-->
       </div>
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -549,18 +537,18 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>Lorem ipsum</span
-          ><span class="accentcolor">&nbsp;dolor.</span>
+          <span class="dark:text-dark-light-grey">Lorem ipsum</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;dolor.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
         ><!--v-if-->
       </div>
       <div
-        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px]"
+        class="flex flex-col rounded-xl shadow-lg bg-gray-50 col-span-1 2xl:p-[30px] xl:p-[26px] lg:p-[24px] mobile:p-[20px] p-[15px] dark:bg-dark-card"
       >
         <div
           class="tablet:justify-start justify-center w-full flex align-middle mobile:h-[30px] h-[16px]"
@@ -588,11 +576,11 @@
         <div
           class="2xl:text-[28px] xl:text-[26px] lg:text-[24px] tablet:text-[22px] mobile:text-[20px] text-[16px] font-bold 2xl:mt-[30px] xl:mt-[26px] lg:mt-[24px] tablet:mt-[20px]"
         >
-          <span>Lorem ipsum</span
-          ><span class="accentcolor">&nbsp;dolor.</span>
+          <span class="dark:text-dark-light-grey">Lorem ipsum</span
+          ><span class="text-accent-color dark:text-dark-orange">&nbsp;dolor.</span>
         </div>
         <span
-          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack"
+          class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] mobile:text-[14px] text-[8px] mobile:mt-[30px] mt-[12px] 2xl:mb-[30px] xl:mb-[22px] lg:mb-[16px] mb-[10px] texteerieblack dark:text-dark-light-grey"
           >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
           nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
           pellentesque. Purus elit tortor ornare.</span
@@ -620,12 +608,12 @@
       class="flex flex-col lg:w-4/5 w-full justify-center items-center"
     >
       <span
-        class="font-bold primaryfont 2xl:text-[68px] xl:text-[58px] text-[48px] mt-[50px]"
+        class="font-bold primaryfont 2xl:text-[68px] xl:text-[58px] text-[48px] mt-[50px] dark:text-dark-light-grey"
         >Testimonials</span
       >
       <div class="flex mt-[100px]">
         <div
-          class="flex align-middle justify-center items-center 2xl:p-10 xl:p-8 lg:p-6 p-5"
+          class="flex align-middle justify-center items-center 2xl:p-10 xl:p-8 lg:p-6 p-5 dark:text-dark-orange"
         >
           <svg
             width="60"
@@ -640,36 +628,35 @@
               width="59.166"
               height="59.166"
               rx="29.583"
-              fill="white"
             ></rect>
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M25.1823 30.8712C24.7009 30.3898 24.7009 29.6093 25.1823 29.128L32.5781 21.7322C33.0594 21.2508 33.8399 21.2508 34.3213 21.7322C34.8026 22.2136 34.8026 22.994 34.3213 23.4754L27.7971 29.9996L34.3213 36.5237C34.8026 37.0051 34.8026 37.7855 34.3213 38.2669C33.8399 38.7483 33.0594 38.7483 32.5781 38.2669L25.1823 30.8712Z"
-              fill="#D6D6D6"
+              fill="currentColor"
             ></path>
           </svg>
         </div>
         <div
-          class="bg-gray-100 rounded-xl flex flex-row items-center align-middle p-4"
+          class="bg-gray-100 dark:bg-dark-card rounded-xl flex flex-row items-center align-middle p-4"
         >
           <img class="w-2/5" src="{% static "images/images/danielle.png" %}" />
           <div class="flex flex-col">
             <span
-              class="2xl:text-[22px] xl:text-[20px] lg:text-[18px] text-[16px] texteerieblack"
+              class="2xl:text-[22px] xl:text-[20px] lg:text-[18px] text-[16px] texteerieblack dark:text-dark-light-grey"
               >"Lorem ipsum dolor sit amet consectetur. Consectetur mauris
               nulla tellus ultricies lobortis. Ornare sodales sit arcu
               nunc eu pellentesque. Purus elit tortor ornare."</span
             ><span
-              class="2xl:text-[22px] xl:text-[20px] lg:text-[18px] text-[16px] mt-[15px] accentcolor font-semibold"
+              class="2xl:text-[22px] xl:text-[20px] lg:text-[18px] text-[16px] mt-[15px] accentcolor font-semibold dark:text-dark-orange"
               >Company name</span
-            ><span class="lg:text-[16px] text-[14px] primarycolor"
+            ><span class="lg:text-[16px] text-[14px] text-primary-color dark:text-dark-light-grey"
               >Name of the client</span
             >
           </div>
         </div>
         <div
-          class="flex align-middle justify-center items-center 2xl:p-10 xl:p-8 lg:p-6 p-5"
+          class="flex align-middle justify-center items-center 2xl:p-10 xl:p-8 lg:p-6 p-5 dark:text-dark-orange"
         >
           <svg
             width="60"
@@ -684,13 +671,12 @@
               width="59.166"
               height="59.166"
               rx="29.583"
-              fill="white"
             ></rect>
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M34.8177 29.1288C35.2991 29.6102 35.2991 30.3907 34.8177 30.872L27.4219 38.2678C26.9406 38.7492 26.1601 38.7492 25.6787 38.2678C25.1974 37.7864 25.1974 37.006 25.6787 36.5246L32.2029 30.0004L25.6787 23.4763C25.1974 22.9949 25.1974 22.2145 25.6787 21.7331C26.1601 21.2517 26.9406 21.2517 27.4219 21.7331L34.8177 29.1288Z"
-              fill="#101623"
+              fill="currentColor"
               fill-opacity="0.8"
             ></path>
           </svg>
@@ -705,23 +691,23 @@
       class="mt-[50px] flex flex-col w-full items-center align-middle mb-[200px]"
     >
       <span
-        class="2xl:text-[68px] xl:text-[58px] text-[48px] font-bold primaryfont"
+        class="2xl:text-[68px] xl:text-[58px] text-[48px] font-bold primaryfont dark:text-dark-light-grey"
         >FAQ</span
       >
       <div
         class="mt-[120px] grid grid-cols-2 gap-[30px] gap-y-[45px] shrink"
       >
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -730,22 +716,22 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -754,22 +740,22 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -778,22 +764,22 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -802,22 +788,22 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -826,22 +812,22 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-gray-100 rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
+          class="col-span-1 flex flex-col bg-gray-100 dark:bg-dark-card rounded-3xl 2xl:p-[35px] xl:p-[30px] lg:p-[25px] p-[20px] h-fit w-fit"
         >
           <button
             class="cursor-pointer flex flex-row whitespace-nowrap items-center align-middle justify-start"
           >
             <span
-              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold"
+              class="2xl:text-[27px] xl:text-[22px] lg:text-[18px] md:text-[15px] text-[12px] font-semibold dark:text-dark-light-grey"
               >What types of Services does hubinit offer?</span
             ><svg
-              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px]"
+              class="2xl:ml-[20px] xl:ml-[16px] lg:ml-[14px] ml-[12px] 2xl:w-[26px] xl:w-[22px] lg:w-[18px] w-[16px] 2xl:h-[15px] xl:h-[13px] lg:h-[11px] h-[9px] dark:text-dark-light-grey"
               viewBox="0 0 26 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -850,7 +836,7 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.9493 1.29843C12.6297 0.617972 13.733 0.617972 14.4134 1.29843L24.868 11.753C25.5484 12.4334 25.5484 13.5367 24.868 14.2171C24.1875 14.8976 23.0843 14.8976 22.4038 14.2171L13.1813 4.99467L3.95888 14.2171C3.27842 14.8976 2.17518 14.8976 1.49472 14.2171C0.814259 13.5367 0.814259 12.4334 1.49472 11.753L11.9493 1.29843Z"
-                fill="#283454"
+                fill="currentColor"
               ></path>
             </svg>
           </button>

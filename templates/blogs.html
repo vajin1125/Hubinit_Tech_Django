@@ -15,10 +15,10 @@
       class="flex flex-col w-full tablet:mt-[128px] mobile:mt-[80px] mt-[40px]"
     >
       <span
-        class="tablet:text-[68px] mobile:text-[40px] text-[35px] accentcolor font-bold primaryfont"
+        class="tablet:text-[68px] mobile:text-[40px] text-[35px] text-accent-color dark:text-dark-orange font-bold primaryfont"
         >Blogs</span
       ><span
-        class="tablet:text-[20px] mobile:text-[24px] text-[12px] tablet:font-normal texteerieblack mt-[20px]"
+        class="tablet:text-[20px] mobile:text-[24px] text-[12px] tablet:font-normal texteerieblack mt-[20px] dark:text-dark-light-grey"
         >Insightful articles and engaging content.</span
       ><!--v-if-->
       <div
@@ -26,22 +26,22 @@
       >
         <a
           href="#Technology"
-          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit dark:bg-dark-orange"
         >
           Technology </a
         ><a
           href="#Design"
-          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit dark:bg-dark-orange"
         >
           Design </a
         ><a
           href="#Marketing"
-          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+          class="bgspaceodet tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit dark:bg-dark-orange"
         >
           Marketing </a
         ><a
           href="#SocialMedia"
-          class="bgspaceodet whitespace-nowrap tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit"
+          class="bgspaceodet whitespace-nowrap tablet:p-[13px] sm:p-[8px] p-[6px] rounded-xl h-fit dark:bg-dark-orange"
         >
           Social Media
         </a>
@@ -60,17 +60,17 @@
       <div
         class="textspaceodet font-bold tablet:text-[36px] text-[25px] justify-center w-full flex"
       >
-        <span>Latest </span
-        ><span
-          class="tablet:textspaceodet mobile:textblazeorange textspaceodet"
-          >&nbsp;articles</span
-        >
+        <span class="dark:text-dark-light-grey">Latest </span>
+        <span
+          class="tablet:textspaceodet mobile:textblazeorange textspaceodet dark:text-dark-orange"
+          >&nbsp;articles
+        </span>
       </div>
       <div
         class="mt-[40px] flex xl:flex-row flex-col w-full 2xl:gap-[110px] tablet:gap-[40px] gap-y-[30px] textspaceodet"
       >
         <div
-          class="xl:w-[55%] flex flex-col shadow-xl rounded-xl sm:pt-[26px] pt-[20px] sm:px-[30px] px-[20px] sm:pb-[10px] pb-[26px]"
+          class="xl:w-[55%] flex flex-col shadow-xl rounded-xl sm:pt-[26px] pt-[20px] sm:px-[30px] px-[20px] sm:pb-[10px] pb-[26px] dark:bg-dark-card"
         >
           <img
             class="px-[12px]"
@@ -79,12 +79,12 @@
           <div
             class="flex justify-between sm:mt-[20px] mt-[15px] align-top"
           >
-            <span class="font-bold sm:text-[24px] text-[22px]"
+            <span class="font-bold sm:text-[24px] text-[22px] dark:text-dark-light-grey"
               >The importance of teamwork</span
-            ><span class="text-[12px]">January 4 2023</span>
+            ><span class="text-[12px] dark:text-dark-orange">January 4 2023</span>
           </div>
           <span
-            class="sm:mt-[15px] mt-[10px] sm:text-[16px] text-[14px] sm:font-semibold"
+            class="sm:mt-[15px] mt-[10px] sm:text-[16px] text-[14px] sm:font-semibold dark:text-dark-light-grey"
             >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
             Lorem...</span
           >
@@ -96,12 +96,12 @@
                 class="w-[10%]"
                 src="{% static "images/images/circle.png" %}"
               /><span
-                class="sm:text-[16px] text-[12px] ml-[8px] font-bold"
+                class="sm:text-[16px] text-[12px] ml-[8px] font-bold dark:text-dark-orange"
                 >Daniele Inserra (UX/UI Designer)</span
               >
             </div>
             <div
-              class="blazeorange items-center align-middle border-2 rounded-full h-fit py-[5px] px-[10px]"
+              class="blazeorange items-center align-middle border-2 rounded-full h-fit py-[5px] px-[10px] dark:text-dark-orange dark:border-dark-orange"
             >
               #Marketing
             </div>
@@ -111,16 +111,16 @@
           class="xl:w-[45%] flex xl:flex-col sm:flex-row flex-col 2xl:gap-[65px] tablet:gap-[20px] gap-[22px]"
         >
           <div
-            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px]"
+            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px] dark:bg-dark-card"
           >
             <img
               class="w-[35%] h-fit"
               src="{% static "images/images/blog2.png" %}"
             />
             <div class="flex flex-col ml-[15px]">
-              <span class="font-bold tablet:text-[20px] text-[14px]"
+              <span class="font-bold tablet:text-[20px] text-[14px] dark:text-dark-light-grey"
                 >Adobe bought Figma, what happens now?</span
-              ><span class="tablet:text-[12px] text-[9px]"
+              ><span class="tablet:text-[12px] text-[9px] dark:text-dark-light-grey"
                 >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
                 ipsum Lorem...</span
               ><!--v-if-->
@@ -131,28 +131,28 @@
                   <img
                     class="w-[24px]"
                     src="{% static "images/images/circle.png" %}"
-                  /><span class="ml-[9px] tablet:text-[12px] text-[9px]"
+                  /><span class="ml-[9px] tablet:text-[12px] text-[9px] dark:text-dark-orange"
                     >Daniele Inserra (UX/UI Designer)</span
                   >
                 </div>
                 <span
-                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px]"
+                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px] dark:text-dark-orange dark:border-dark-orange"
                   >#Technology</span
                 >
               </div>
             </div>
           </div>
           <div
-            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px]"
+            class="w-full rounded-xl shadow-xl flex tablet:py-[21px] py-[14px] px-[15px] dark:bg-dark-card"
           >
             <img
               class="w-[35%] h-fit"
               src="{% static "images/images/blog2.png" %}"
             />
             <div class="flex flex-col ml-[15px]">
-              <span class="font-bold tablet:text-[20px] text-[14px]"
+              <span class="font-bold tablet:text-[20px] text-[14px] dark:text-dark-light-grey"
                 >Adobe bought Figma, what happens now?</span
-              ><span class="tablet:text-[12px] text-[9px]"
+              ><span class="tablet:text-[12px] text-[9px] dark:text-dark-light-grey"
                 >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
                 ipsum Lorem...</span
               ><!--v-if-->
@@ -163,12 +163,12 @@
                   <img
                     class="w-[24px]"
                     src="{% static "images/images/circle.png" %}"
-                  /><span class="ml-[9px] tablet:text-[12px] text-[9px]"
+                  /><span class="ml-[9px] tablet:text-[12px] text-[9px] dark:text-dark-orange"
                     >Daniele Inserra (UX/UI Designer)</span
                   >
                 </div>
                 <span
-                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px]"
+                  class="text-[10px] items-center align-middle green border h-fit rounded-full px-[7px] pt-[5px] dark:text-dark-orange dark:border-dark-orange"
                   >#Technology</span
                 >
               </div>
@@ -178,7 +178,7 @@
       </div>
       <div class="w-full flex justify-center">
         <button
-          class="mt-[85px] text-white bgblazeorange tablet:text-[22px] text-[20px] tablet:px-[60px] px-[35px] py-[20px] w-fit rounded-xl"
+          class="mt-[85px] text-white dark:bg-dark-orange tablet:text-[22px] text-[20px] tablet:px-[60px] px-[35px] py-[20px] w-fit rounded-xl"
         >
           <span>See all articles</span>
         </button>
@@ -198,7 +198,7 @@
       class="mt-[50px] flex flex-col justify-center align-middle items-center w-full mb-[200px]"
     >
       <span
-        class="texteerieblack tablet:text-[48px] text-[40px] font-bold"
+        class="texteerieblack tablet:text-[48px] text-[40px] font-bold dark:text-dark-light-grey"
         >Authors</span
       >
       <div class="relative tablet:mt-[75px] mt-[40px] w-10/12 flex">
@@ -214,7 +214,7 @@
             > -->
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -225,7 +225,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -236,7 +236,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -247,7 +247,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -258,7 +258,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -269,7 +269,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -280,7 +280,7 @@
               </div>
               <div class="owl-item" style="width: 298px">
                 <div
-                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px]"
+                  class="flex h-[309px] mb-[26px] flex-col shadow-lg rounded-xl w-fit text-center mr-10 mb-[30px] dark:bg-dark-card dark:text-dark-orange"
                 >
                   <img
                     class="w-[220px] h-[220px]"
@@ -293,7 +293,7 @@
           </div> -->
         </div>
         <div
-          class="absolute right-0 w-[15%] h-full gradient pointer-events-none border-none"
+          class="absolute right-0 w-[15%] h-full gradient pointer-events-none border-none dark:bg-gradient-to-l from-dark-bg"
         ></div>
       </div>
     </div>
